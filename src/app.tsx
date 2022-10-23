@@ -1,11 +1,17 @@
+/* eslint-disable prettier/prettier */
+import Card from "@components/Card"
+import Title from "@components/Title"
 import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 
-const App = () => (
-    <div className="w-full h-full flex justify-center items-center">
-        <h1>Hello There!</h1>
-    </div>
-)
+const App = () => {
+    return (
+        <div className="relative w-1464 h-1697 flex-col justify-center items-center">
+            <Title />
+            <Card />
+        </div>
+    )
+}
 
 ReactDOM.render(<App />, document.getElementById("root"))
