@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 work: "Work Sans",
+                rubik: "Rubik",
             },
             colors: {
                 blue: "#1B31A8",
