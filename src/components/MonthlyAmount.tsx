@@ -1,6 +1,6 @@
 import React from "react"
 
-const MonthlyAmount = () => {
+const MonthlyAmount = ({ monthlyInstallment }) => {
     return (
         <div className="absolute left-[32px] top-[24px] right-[32px] h-[38px]">
             <div className="absolute left-0 top-[7px] right-[192px] h-6 flex flex-col items-start p-0 gap-2.5">
@@ -10,7 +10,7 @@ const MonthlyAmount = () => {
             </div>
             <div className="absolute left-[288px] top-0 right-0 h-[38px] flex flex-col items-start p-0 gap-2.5">
                 <p className="w-[128px] h-[38px] font-rubik not-italic font-medium text-[32px] leading-[120%] flex text-right text-[#0079FF] flex-none order-none self-stretch flex-grow-0">
-                    $521
+                    ${monthlyInstallment.toFixed(2)}
                 </p>
             </div>
         </div>

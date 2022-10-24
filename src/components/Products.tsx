@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 import products from "../../build/public/products.json"
 
-const Products = () => {
-    const [product, setProduct] = useState(products[0])
-    console.log(product)
+const Products = ({ product, setProduct }) => {
     return (
         <div className="absolute top-[18px] left-[149px] w-262 h-86 flex">
             <div
                 className="absolute left-0 top-0 w-86 h-86 cursor-pointer"
-                onClick={() => setProduct(products[1])}>
+                onClick={() => {
+                    setProduct(products[1])
+                }}>
                 <img src={products[1].image} alt={products[0].name} />
             </div>
             <div
